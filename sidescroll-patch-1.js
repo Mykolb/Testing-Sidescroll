@@ -33,7 +33,7 @@ else {
 }
 );
 
-Nynaeve$37
+
 
 /***
  * Mykols Print out Scrolly elements function
@@ -52,5 +52,7 @@ arr.forEach.call(
     }
   }
 );
+
+
 
 
