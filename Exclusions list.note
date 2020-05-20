@@ -1,0 +1,5 @@
+Exclusions List
+
+1. screen reader classes
+2. html, body properties with overflow-x
+3. parent elements with visibility:hidden or dislpay none 
