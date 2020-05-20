@@ -1,5 +1,5 @@
 /***
- * Updated Margin Tester May 18
+ * Updated Margin Tester May 19
  */
 var el, readyStyle, rightStyle, leftStyle, isNotNegative,isMarginAuto;
 let ary = [];
