@@ -29,8 +29,8 @@ function negMargins(el){
             readyStyle = el.currentStyle || window.getComputedStyle(el);
 
             //get left & right margin properties as integers
-            leftStyle = parseInt(readyStyle.marginLeft, 2);
-            rightStyle = parseInt(readyStyle.marginRight, 2);
+            leftStyle = parseInt(readyStyle.marginLeft, 0);
+            rightStyle = parseInt(readyStyle.marginRight, 0);
     
     
             //calc if left or right margins are equal or higher than 0
@@ -41,7 +41,7 @@ function negMargins(el){
     
             
     //calcutate if the margin is less than 0 print the class names and right and left margin value.
-    if(!isNotNegative && !isMarginAuto) {
+    if((!isNotNegative && !isMarginAuto) || (leftStyle < 0) || (rightStyle < 0)) {
             console.log( ` <${el.tagName.toLowerCase()} id="${el.id}" class="${el.classList}"> has a margin-right: ${rightStyle}; and margin-left: ${leftStyle};`);
     }
     else {
@@ -127,7 +127,7 @@ negMargins(el);
 
 /**
  * PRINT ABSOLUTE POSITION ELEMENTS
- */
+
 console.log( ` 
 
 ELEMENTS ABSOLUTELY POSITIONED: 
@@ -140,12 +140,13 @@ ary.forEach.call(
 absolutePos(el);
 }
 );
-
+ */
 /**
  * PRINT FIXED POSITION ELEMENTS
- * 
- * console.log( ` 
- * 
+ * */
+  console.log( ` 
+ 
+ 
 ELEMENTS WITH FIXED POSITION:
 
 `);
@@ -156,7 +157,7 @@ ary.forEach.call(
 fixedPos(el);
 }
 );
- */
+ 
 
 
 
@@ -176,3 +177,4 @@ stickyPos(el);
 }
 );
  */
+
