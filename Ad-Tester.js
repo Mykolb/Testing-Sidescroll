@@ -21,7 +21,7 @@ var  comscore = document.querySelector('/**insert selector**/');
 **/
 var comscorePos = 'beforeend';
 
-var ad = `<p style="background:gray; width:300px; height:300px;"></p>`;
+var ad = `<div style="background:gray; width:300px; height:300px;"></div>`;
   var comAd = `<div id="footer_branding" style="text-align : center; font-size : 11px; margin-top : 10px;">
     Exclusive Member of Mediavine Home
   </div>`;
