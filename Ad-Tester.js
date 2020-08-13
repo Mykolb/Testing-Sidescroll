@@ -47,3 +47,25 @@ var comscorePos = 'beforeend';
     Exclusive Member of Mediavine Home
   </div>`;
   comscore.insertAdjacentHTML(comscorePos, comAd);
+
+  // in-content
+var cs = document.querySelector('insert selector')
+var csPos = 'afterend'
+
+
+
+var csAd = `<div style="background:gray; width:300px; height:300px;"></div>`;
+ 
+cs.insertAdjacentHTML(csPos, csAd);
+
+
+
+
+// var elements = document.querySelectorAll("a");
+
+// This works!
+// - needs to add multiple divs now
+var elements = document.querySelectorAll(".single-post .entry-content p");
+for (var i= 0; i < elements.length; i++) {
+    elements[i].insertAdjacentHTML('beforeend', '<div style="background:gray; width:300px; height:300px; margin: 0 auto"></div>')
+}
